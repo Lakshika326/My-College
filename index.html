@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- spinner -->
+    <div id="spinner"
+        style="display: flex;flex-direction: column; width: 100vw;height: 100Vh;justify-content: center;align-items: center;background: #000;">
+        <span class="loader"></span>
+        <span class="loader1">Loading..!</span>
+    </div>
+    <div id="container" style="display: none;">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">My College</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Academic Programs</a></li>
+                    <li><a href="#faculty">Faculty Directory</a></li>
+                    <li><a href="#news">News and Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="home" class="section-card">
+                <img src="./assets/img/rippon.jpeg" alt="home-image">
+        </section>
+        <section id="about" class="section-card">
+            <h2>About Us</h2>
+            <p>Rippon Girls' College is a prestigious all-girls school located in Galle, Sri Lanka. Established in 1817, the school has a long history of providing quality education to young women. It offers a well-rounded curriculum that emphasizes academic excellence, extracurricular development, and moral values. With a focus on empowering girls through education, Rippon Girls' College fosters a supportive and inclusive environment that prepares students for future leadership roles. The school's beautiful campus and dedicated faculty contribute to its reputation as one of the top educational institutions in the region.</p>
+        </section>
+        <section id="programs" class="section-card"></section>
+        <section id="faculty" class="section-card"></section>
+        <section id="news" class="section-card"></section>
+        <section id="contact" class="section-card"></section>
+        
+
+    </div>
+</body>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            document.getElementById("spinner").style.display = "none";
+            document.getElementById("container").style.display = "block";
+        }, 3000);
+    });
+
+</script>
+
+</html>
